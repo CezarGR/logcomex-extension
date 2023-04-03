@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Logcomex Extension",
+    "version": "1.0",
+    "description": "A criação dessa extensão Google Chrome tem a fução de auxiliar a navegação entre ambientes do projeto Logamager da Logcomex",
+    "action": {
+        "default_popup": "src/popup.html",
+        "default_icon": "assets/icon/logcomex.png"
+    },
+    "permissions": ["tabs", "activeTab", "storage", "scripting"],
+    "optional_host_permissions": [
+        "*://*/*"
+    ],
+    "host_permissions": [
+        "https://plataforma.logcomex.io/*",
+        "http://hml-logmanager.logcomex.io/*",
+        "http://localhost/*"
+    ]
+}
