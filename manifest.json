@@ -3,9 +3,15 @@
     "name": "Logcomex Extension",
     "version": "1.0",
     "description": "A criação dessa extensão Google Chrome tem a fução de auxiliar a navegação entre ambientes do projeto Logamager da Logcomex",
+    "icons": {
+        "16": "src/images/logcomex.png",
+        "32": "src/images/logcomex.png",
+        "48": "src/images/logcomex.png",
+        "128": "src/images/logcomex.png"
+    },
     "action": {
         "default_popup": "src/popup.html",
-        "default_icon": "assets/icon/logcomex.png"
+        "default_icon": "src/images/logcomex.png"
     },
     "permissions": ["tabs", "activeTab", "storage", "scripting"],
     "optional_host_permissions": [

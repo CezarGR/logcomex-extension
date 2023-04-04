@@ -4,9 +4,55 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="popup.css">
         <title>Logcomex Extension</title>
     </head>
     <body>
-        
+        <div class="mainContainer">
+            <div class="mainContainer__header">
+                <h1 class="mainContainer__header__title">Deseja acessar outro ambiente ? </h1>
+            </div>
+            <div class="mainContainer__body">
+                <form class="mainContainer__body__form">
+                    <p class="mainContainer__body__form__subtitle">Ambiente</p>
+                    <select 
+                        class="mainContainer__body__form__input" 
+                        id="environment-id"
+                    >
+                    </select>
+                    <p class="mainContainer__body__form__subtitle">Endereço</p>
+                    <input 
+                        disabled 
+                        class="mainContainer__body__form__input mainContainer__body__form__input--disabled" 
+                        type="text" 
+                        name="address" 
+                        id="address-id"
+                    />
+                    <div class="mainContainer__body__form__checkboxContainer">
+                        <input 
+                            checked 
+                            class="mainContainer__body__form__checkboxContainer__checkbox"
+                            type="checkbox" 
+                            id="checkbox-id">
+                        <label 
+                            class="mainContainer__body__form__checkboxContainer__label"
+                            id="checkbox-label-id"
+                        >
+                            Abrir em uma nova aba
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="mainContainer__footer">
+                <button class="mainContainer__footer__button mainContainer__footer__button--cancel" id="cancel-button-id">
+                    Cancelar
+                </button>
+                <button class="mainContainer__footer__button mainContainer__footer__button--redirect" id="redirect-button-id">
+                    Redirecionar
+                </button>
+            </div>
+        </div>
+        <script src="popup.js"></script>
     </body>
 </html>
