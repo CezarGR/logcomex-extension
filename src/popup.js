@@ -16,6 +16,20 @@ const environments = [
     }
 ]
 
+// const [tab] = await chrome.tabs.query({
+//     active: true,
+//     currentWindow: true
+// })
+
+// if (ta no dominio .logcomex.io)
+const mainContent = document.querySelector('.mainContainer')
+// mainContent.classList.add('hide-element')
+
+
+const noContent = document.querySelector('#no-content')
+noContent.classList.remove('hide-element')
+
+
 setUpEnviromentSelectAndAddressInput()
 
 checkboxLabel.addEventListener('click', () => {

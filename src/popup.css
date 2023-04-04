@@ -128,3 +128,7 @@ body {
 .mainContainer__footer__button--redirect:hover {
     background-color: rgba(255, 136, 26, 0.90);
 }
+
+.hide-element {
+    display: none;
+}
